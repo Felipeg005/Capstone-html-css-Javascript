@@ -4,7 +4,7 @@
   background: no-repeat;
   background-image: url(./imgs/background-header.jpg);
   background-size: cover;
-  background-color: white;
+  background-color: #f7f7f7;
   width: 100%;
   height: 900px;
   background-position: top;
@@ -15,7 +15,7 @@
   background: no-repeat;
   background-image: url(./imgs/background-header.jpg);
   background-size: cover;
-  background-color: white;
+  background-color: #f7f7f7;
   width: 100%;
   height: 900px;
   background-position: right top;
@@ -317,11 +317,12 @@ a {
 }
 
 .eventimg {
-  width: 60px;
-  height: 60px;
-  margin: 10px;
+  width: 80px;
+  height: 80px;
+  padding: 5px;
   background-color: rgba(0, 0, 0, 0.445);
   border-radius: 20px;
+  margin-left: 5px;
 }
 
 .event-tittle {
@@ -346,6 +347,7 @@ a {
   border: none;
   font-size: 17px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .speakers {
@@ -425,6 +427,7 @@ a {
   font-size: 17px;
   font-weight: bold;
   width: 90%;
+  cursor: pointer;
 }
 
 .logoimg {
@@ -458,6 +461,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 500px rgba(255, 68, 0, 0.678);
+  cursor: pointer;
 }
 .lastinfobutton1 {
   margin: 20px 1px;
@@ -468,17 +472,20 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 500px rgba(255, 68, 0, 0.678);
+  cursor: pointer;
 }
 
 .infobuttontext {
   color: white;
   font-size: 24px;
   font-weight: bolder;
+  cursor: pointer;
 }
 
 .infobuttontext1 {
   color: white;
   font-size: 17px;
+  cursor: pointer;
 }
 
 .partner {
@@ -535,17 +542,146 @@ a {
     display: none;
   }
 
+  .optionsheadercontainer {
+    display: none;
+  }
+
   .pd1,
   .pd2,
   .a-pd1,
   .a-pd2 {
     display: none;
   }
+
+  .speakercard3,
+  .speakercard4,
+  .speakercard5,
+  .speakercard6 {
+    display: none;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  .aboutfooter {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
+  .header1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #126e;
+  }
+
+  .header-desktop {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    width: 105%;
+    margin-left: -50px;
+    background-color: white;
+    padding: 20px;
+    margin-top: -10px;
+  }
+
+  .headerimgcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headerimg {
+    height: 100px;
+    width: 150px;
+    grid-column-start: 1;
+  }
+
+  .headercontainer {
+    grid-column-start: 2;
+    display: flex;
+    align-items: center;
+  }
+  
   .headerelement {
     display: none;
+  }
+
+  .hbuttoncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headerbutton {
+    grid-column-start: 3;
+    border: 2px solid orangered;
+    background-color: transparent;
+    text-align: center;
+    color: orangered;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+  }
+
+  .header-desktop1,
+  .header-desktop2,
+  .header-desktop3,
+  .header-desktop4 {
+    margin-left: 30px;
+    color: rgb(46, 46, 46);
+  }
+
+  .header-desktop1:hover,
+  .header-desktop2:hover,
+  .header-desktop3:hover,
+  .header-desktop4:hover {
+    color: orangered;
+    margin-left: 30px;
+  }
+
+  .header-desktop1,
+  .header-desktop1:hover {
+    margin-left: 1px;
+  }
+
+  .optionsheadercontainer {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: #414246;
+    margin-left: -30px;
+    margin-top: -10px;
+  }
+
+  .optionsheader {
+    grid-column-start: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon1,
+  .icon2 {
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .optiontext1,
+  .optiontext2 {
+    margin-left: 10px;
+    color: white;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 14px;
   }
 
   .a-pd1,
@@ -553,11 +689,13 @@ a {
     display: none;
   }
 
-  .headline {
+  .headline,
+  .a-headline {
+    margin: 50px 1px;
     display: grid;
     grid-template-columns: repeat(5, 20%);
   }
-
+  
   .ph1,
   .p1,
   .pheadline,
@@ -567,7 +705,147 @@ a {
     grid-column-end: 5;
   }
 
+  .pheadline {
+    margin: 1px 100px 1px 1px;
+  }
   
+  .ph1 {
+    margin: 1px;
+  }
+  
+  .events {
+    margin: 50px 1px;
+    display: grid;
+    grid-template-columns: repeat(6, 16.66%);
+    grid-template-rows: 20% 60% 20%;
+    width: 100%;
+    margin-left: -15px;
+  }
+
+  .mainevents {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .eventsline {
+    margin-top: 50px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .eventcard {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    text-align: center;
+  }
+
+  .eventcard:hover {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 15px;
+    transition: 0.5s;
+  }
+
+  .eventcard1 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .eventcard2 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+
+  .eventcard3 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+  }
+
+  .eventcard4 {
+    grid-column-start: 5;
+    grid-row-start: 2;
+  }
+
+  .eventimg {
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+
+  }
+
+  .eventsbutton {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin: 20px 1px;
+    background-color: transparent;
+    color: white;
+    padding: 25px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .speakers {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 10% 26.66% 26.66% 26.66% 10%;
+    width: 100vw;
+  }
+
+  .speakerstittle {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+  }
+
+  .speakercard {
+    margin-top: 40px;
+  }
+
+  .speakercard1 {
+    grid-row-start: 2;
+  }
+
+  .speakercard1,
+  .speakercard3,
+  .speakercard5 {
+    grid-column-start: 2;
+  }
+
+  .speakercard2,
+  .speakercard4,
+  .speakercard6 {
+    grid-column-start: 3;
+  }
+
+  .speakersbutton {
+    display: none;
+  }
+
+  .aboutfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 1px;
+  }
+
+  .partnerline {
+    margin-top: -40px;
+    color: orangered;
+    text-align: center;
+  }
+
+
 }
 
 

@@ -292,6 +292,12 @@ a {
   margin-top: -30px;
 }
 
+.eventsline1 {
+  color: orangered;
+  text-align: center;
+  margin-top: -30px;
+}
+
 .infodescpt{
   font-size: 12px;
   color: rgb(66, 66, 66);
@@ -387,6 +393,7 @@ a {
   background-color: gray;
   background-size: 10px;
   background-position: top left;
+  background-size: auto;
 }
 
 .speakerimg1 {
@@ -763,6 +770,20 @@ a {
     grid-row-start: 1;
     grid-row-end: 2;
   }
+
+  .eventsline1 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .eventsline1 {
+    color: orangered;
+    text-align: center;
+    margin-top: 40px;
+  }
+
   .eventcard {
     display: flex;
     flex-direction: column;

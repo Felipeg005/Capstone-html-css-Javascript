@@ -197,7 +197,7 @@ a {
 .pd1,
 .pd2 {
   -webkit-background-clip: text;
-  background-clip: text;
+  background-clip: inherit;
   -webkit-text-fill-color: transparent;
   background-image: url("./imgs/Text-Background.jpg");
   background-size: contain;
@@ -267,13 +267,11 @@ a {
   margin: -25px 1px 1px 1px;
   width: 102vw;
   margin-left: -8px;
-  padding-top: 3px;
-  padding-bottom: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f7f7f7;
-  padding: 1px 1px 30px 1px;;
+  padding: 3px 1px 30px 1px;
 }
 
 .mainevents {
@@ -298,7 +296,7 @@ a {
   margin-top: -30px;
 }
 
-.infodescpt{
+.infodescpt {
   font-size: 12px;
   color: rgb(66, 66, 66);
   margin: 10px 10px 10px 20px;
@@ -371,12 +369,6 @@ a {
 .speakerstittle {
   color: black;
   text-align: center;
-}
-
-.eventsline {
-  color: orangered;
-  text-align: center;
-  margin-top: -30px;
 }
 
 .speakercard {
@@ -478,6 +470,7 @@ a {
   box-shadow: inset 0 0 0 500px rgba(255, 68, 0, 0.678);
   cursor: pointer;
 }
+
 .lastinfobutton1 {
   margin: 20px 1px;
   height: 200px;
@@ -513,7 +506,7 @@ a {
   padding: 15px 1px;
 }
 
-.partnertittle{
+.partnertittle {
   color: white;
   font-size: 25px;
   text-align: center;
@@ -628,7 +621,7 @@ a {
     display: flex;
     align-items: center;
   }
-  
+
   .headerelement {
     display: none;
   }
@@ -728,7 +721,7 @@ a {
     display: grid;
     grid-template-columns: repeat(5, 20%);
   }
-  
+
   .ph1,
   .a-p1,
   .a-pd1,
@@ -757,11 +750,11 @@ a {
   .pheadline {
     margin: 1px 100px 1px 1px;
   }
-  
+
   .ph1 {
     margin: 1px;
   }
-  
+
   .events {
     margin: 50px 1px;
     display: grid;
@@ -959,5 +952,3 @@ a {
     font-weight: bolder;
   }
 }
-
-

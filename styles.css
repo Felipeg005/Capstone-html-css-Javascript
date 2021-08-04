@@ -385,7 +385,6 @@ a {
   background-color: gray;
   background-size: 10px;
   background-position: top left;
-  background-size: auto;
 }
 
 .speakerimg1 {
@@ -646,7 +645,6 @@ a {
   .headerbutton:hover {
     grid-column-start: 3;
     border: 2px solid orangered;
-    background-color: transparent;
     text-align: center;
     color: white;
     font-weight: bolder;
@@ -665,17 +663,17 @@ a {
     color: rgb(46, 46, 46);
   }
 
+  .header-desktop1,
+  .header-desktop1:hover {
+    margin-left: 1px;
+  }
+
   .header-desktop1:hover,
   .header-desktop2:hover,
   .header-desktop3:hover,
   .header-desktop4:hover {
     color: orangered;
     margin-left: 30px;
-  }
-
-  .header-desktop1,
-  .header-desktop1:hover {
-    margin-left: 1px;
   }
 
   .optionsheadercontainer {
@@ -783,9 +781,6 @@ a {
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 2;
-  }
-
-  .eventsline1 {
     color: orangered;
     text-align: center;
     margin-top: 40px;

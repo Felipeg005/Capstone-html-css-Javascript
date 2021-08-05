@@ -43,6 +43,8 @@ Give a ⭐️ if you like this project!
 
 - Thanks to Microverse for make it possible!
 
+- Cindy Shin the author of the original design.
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.

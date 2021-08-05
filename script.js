@@ -112,9 +112,9 @@ function createCards() {
     containerDiv.appendChild(speakerDescpt3);
 
     speakerImgFront.src = `${speakerCardArray[i].frontImg}`;
-    speakerImgFront.alt = '';
+    speakerImgFront.alt = 'Featured Speakers';
     speakerImgBack.src = `${speakerCardArray[i].backImg}`;
-    speakerImgBack.alt = '';
+    speakerImgBack.alt = 'Decoration Pattern';
     speakerTittle.innerHTML = speakerCardArray[i].tittle;
     speakerDescpt1.innerHTML = speakerCardArray[i].p1;
     speakerDescpt2.innerHTML = speakerCardArray[i].p2;

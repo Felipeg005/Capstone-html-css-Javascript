@@ -197,7 +197,7 @@ a {
 .pd1,
 .pd2 {
   -webkit-background-clip: text;
-  background-clip: inherit;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: url("./imgs/Text-Background.jpg");
   background-size: contain;
@@ -661,11 +661,6 @@ a {
   .header-desktop4 {
     margin-left: 30px;
     color: rgb(46, 46, 46);
-  }
-
-  .header-desktop1,
-  .header-desktop1:hover {
-    margin-left: 1px;
   }
 
   .header-desktop1:hover,
